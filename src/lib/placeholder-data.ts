@@ -113,6 +113,38 @@ export const cameras: Camera[] = [
     },
     bestFor: ['Landscape', 'Portrait', 'Professional'],
   },
+  {
+    id: '8',
+    name: 'Sony ZV-1 II',
+    slug: 'sony-zv-1-ii',
+    shortDescription: 'Next-generation vlogging with a wider lens and smarter features.',
+    price: 899,
+    specs: {
+        sensor: '1.0-type Exmor RS CMOS sensor',
+        megapixels: '20.1MP',
+        iso: '125-12800',
+        video: '4K 30p, Cinematic Vlog Setting',
+        autofocus: 'Fast Hybrid AF, Real-time Eye AF for humans & animals',
+        connectivity: 'Wi-Fi, Bluetooth, USB-C',
+    },
+    bestFor: ['Vlogging', 'Travel'],
+  },
+  {
+    id: '9',
+    name: 'Sony Alpha 7C II',
+    slug: 'sony-alpha-7c-ii',
+    shortDescription: 'Compact size, full-frame power. The next evolution of compact hybrid performance.',
+    price: 2199,
+    specs: {
+        sensor: '33.0MP 35mm full-frame Exmor R CMOS sensor',
+        megapixels: '33.0MP',
+        iso: '100-51200 (expandable to 50-204800)',
+        video: '4K 60p, 10-bit 4:2:2, S-Cinetone',
+        autofocus: 'AI-powered subject recognition, 759 phase-detection points',
+        connectivity: 'Wi-Fi (5GHz), Bluetooth, USB-C 3.2',
+    },
+    bestFor: ['Photography', 'Videography', 'Travel', 'Hybrid'],
+  },
 ];
 
 export const placeholderImages: PlaceholderImage[] = [
@@ -198,6 +230,28 @@ export const placeholderImages: PlaceholderImage[] = [
       { id: '1', imageUrl: 'https://picsum.photos/seed/a7rv-1/1200/800', imageHint: 'camera landscape' },
       { id: '2', imageUrl: 'https://picsum.photos/seed/a7rv-2/1200/800', imageHint: 'camera portrait' },
       { id: '3', imageUrl: 'https://picsum.photos/seed/a7rv-3/1200/800', imageHint: 'camera studio' },
+    ],
+  },
+  {
+    id: 'sony-zv-1-ii',
+    description: 'The sleek Sony ZV-1 II camera, perfect for on-the-go content creation.',
+    imageUrl: 'https://picsum.photos/seed/zv1-ii-main/800/600',
+    imageHint: 'vlogging camera',
+    gallery: [
+      { id: '1', imageUrl: 'https://picsum.photos/seed/zv1-ii-1/1200/800', imageHint: 'camera lifestyle' },
+      { id: '2', imageUrl: 'https://picsum.photos/seed/zv1-ii-2/1200/800', imageHint: 'camera screen' },
+      { id: '3', imageUrl: 'https://picsum.photos/seed/zv1-ii-3/1200/800', imageHint: 'camera top view' },
+    ],
+  },
+  {
+    id: 'sony-alpha-7c-ii',
+    description: 'The compact yet powerful Sony Alpha 7C II full-frame camera.',
+    imageUrl: 'https://picsum.photos/seed/a7cii-main/800/600',
+    imageHint: 'compact full-frame',
+    gallery: [
+      { id: '1', imageUrl: 'https://picsum.photos/seed/a7cii-1/1200/800', imageHint: 'camera front' },
+      { id: '2', imageUrl: 'https://picsum.photos/seed/a7cii-2/1200/800', imageHint: 'camera side profile' },
+      { id: '3', imageUrl: 'https://picsum.photos/seed/a7cii-3/1200/800', imageHint: 'camera in hand' },
     ],
   },
   {

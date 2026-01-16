@@ -53,8 +53,14 @@ export default function Home() {
             </Button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredCameras.map((camera) => (
-              <CameraCard key={camera.id} camera={camera} />
+            {featuredCameras.map((camera, index) => (
+              <div
+                key={camera.id}
+                className="animate-fade-in-up"
+                style={{ animationFillMode: 'forwards', animationDelay: `${200 + index * 150}ms`, opacity: 0 }}
+              >
+                <CameraCard camera={camera} />
+              </div>
             ))}
           </div>
         </div>

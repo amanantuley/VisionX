@@ -1,4 +1,4 @@
-import { getCameraBySlug } from '@/lib/data';
+import { getCameras, getCameraBySlug } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,10 +21,10 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  const cameras = getCameraBySlug(''); // In a real app, this would be `getCameras()`
-  if (!cameras) return [];
-  
-  return [{ slug: 'sony-alpha-a7-iv' }, { slug: 'sony-alpha-a6400' }, { slug: 'sony-alpha-a6700' }, { slug: 'sony-fx30' }, { slug: 'sony-zv-e10' }, { slug: 'sony-alpha-1' }, { slug: 'sony-alpha-7r-v' }];
+  const cameras = getCameras();
+  return cameras.map((camera) => ({
+    slug: camera.slug,
+  }));
 }
 
 export default function ProductDetailPage({ params }: Props) {

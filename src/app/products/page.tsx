@@ -14,8 +14,14 @@ export default function ProductsPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {cameras.map((camera) => (
-          <CameraCard key={camera.id} camera={camera} />
+        {cameras.map((camera, index) => (
+           <div
+            key={camera.id}
+            className="animate-fade-in-up"
+            style={{ animationFillMode: 'forwards', animationDelay: `${index * 100}ms`, opacity: 0 }}
+          >
+            <CameraCard camera={camera} />
+          </div>
         ))}
       </div>
     </div>
