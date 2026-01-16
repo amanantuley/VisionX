@@ -18,8 +18,8 @@ const fontHeadline = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Alpha Vision - Sony Camera Showcase',
-  description: 'Explore the future of imaging with Sony Alpha cameras. Discover detailed specs, compare models, and find the perfect camera for your needs.',
+  title: 'VisionX - Sony Camera Showcase',
+  description: 'Explore the future of imaging with Sony cameras. Discover detailed specs, compare models, and find the perfect camera for your needs.',
 };
 
 export default function RootLayout({

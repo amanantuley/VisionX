@@ -7,8 +7,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Menu, Camera } from 'lucide-react';
-import { AlphaVisionLogo } from '@/components/icons';
+import { Menu } from 'lucide-react';
+import { VisionXLogo } from '@/components/icons';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -28,10 +28,7 @@ export function Navbar() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Camera className="h-6 w-6" />
-            <span className="hidden font-bold sm:inline-block">
-              Alpha Vision
-            </span>
+            <VisionXLogo />
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
@@ -54,8 +51,7 @@ export function Navbar() {
         {/* Mobile Menu */}
         <div className="flex flex-1 items-center justify-between md:hidden">
             <Link href="/" className="flex items-center space-x-2">
-                <Camera className="h-6 w-6" />
-                <span className="font-bold">Alpha Vision</span>
+                <VisionXLogo />
             </Link>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -68,8 +64,7 @@ export function Navbar() {
               <div className="flex flex-col h-full">
                 <div className="flex items-center mb-8">
                   <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                    <Camera className="h-6 w-6" />
-                    <span className="font-bold">Alpha Vision</span>
+                    <VisionXLogo />
                   </Link>
                 </div>
                 <nav className="flex flex-col space-y-4">

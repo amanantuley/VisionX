@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <Camera className="h-8 w-8 text-primary" />
-              <span className="font-bold text-xl">Alpha Vision</span>
+              <span className="font-bold text-xl">VisionX</span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
               Pushing the boundaries of digital imaging for creators everywhere.
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Alpha Vision. A demonstration website.</p>
+          <p>&copy; {new Date().getFullYear()} VisionX. A demonstration website.</p>
           <div className="flex gap-4 mt-4 sm:mt-0">
             <Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>

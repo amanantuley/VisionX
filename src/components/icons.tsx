@@ -1,13 +1,13 @@
 import type { SVGProps } from 'react';
 
-export function AlphaVisionLogo(props: SVGProps<SVGSVGElement>) {
+export function VisionXLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 40"
-      width="100"
+      viewBox="0 0 130 40"
+      width="80"
       height="20"
-      aria-label="Alpha Vision Logo"
+      aria-label="VisionX Logo"
       {...props}
     >
       <text
@@ -19,18 +19,17 @@ export function AlphaVisionLogo(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
         letterSpacing="1"
       >
-        ALPHA
+        VISION
       </text>
       <text
-        x="95"
+        x="98"
         y="28"
         fontFamily="var(--font-headline), sans-serif"
         fontSize="24"
-        fontWeight="400"
+        fontWeight="bold"
         fill="currentColor"
-        letterSpacing="1"
       >
-        VISION
+        X
       </text>
     </svg>
   );
