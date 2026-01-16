@@ -36,7 +36,7 @@ export function ComparisonTable({ cameras }: ComparisonTableProps) {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-1/4 font-headline text-lg">Feature</TableHead>
-                {cameras.map(camera => {
+                {cameras.map((camera) => {
                    const image = placeholderImages.find(img => img.id === camera.slug);
                    return (
                     <TableHead key={camera.id} className="text-center w-3/8">
@@ -79,7 +79,7 @@ export function ComparisonTable({ cameras }: ComparisonTableProps) {
                       ))}
                     </div>
                   </TableCell>
-                </TableRow>
+                ))}
               </TableRow>
               <TableRow>
                 <TableCell className="font-semibold">Price</TableCell>
