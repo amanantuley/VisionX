@@ -18,17 +18,18 @@ export default function Home() {
             src={heroImage.imageUrl}
             alt={heroImage.description}
             fill
-            className="object-cover brightness-50"
+            className="object-cover"
             priority
             data-ai-hint={heroImage.imageHint}
           />
         )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
         <div className="relative z-10 max-w-4xl p-4">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            Capture the Future with Sony Cameras
+          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold">
+            Capture the Future
           </h1>
-          <p className="mt-4 md:mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Experience unparalleled innovation, from the groundbreaking Alpha series to the pinnacle of mirrorless technology.
+          <p className="mt-4 md:mt-6 text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+            Experience unparalleled innovation with Sony's Alpha series. From groundbreaking mirrorless technology to industry-leading performance, find the perfect camera to bring your vision to life.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild size="lg">

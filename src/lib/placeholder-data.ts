@@ -81,6 +81,38 @@ export const cameras: Camera[] = [
     },
     bestFor: ['Vlogging'],
   },
+  {
+    id: '6',
+    name: 'Sony Alpha 1',
+    slug: 'sony-alpha-1',
+    shortDescription: 'The one camera that does it all. Unprecedented resolution, speed, and video performance.',
+    price: 6499,
+    specs: {
+        sensor: '50.1MP 35mm full-frame stacked Exmor RS CMOS sensor',
+        megapixels: '50.1MP',
+        iso: '100-32000 (expandable to 50-102400)',
+        video: '8K 30p, 4K 120p, 10-bit 4:2:2',
+        autofocus: '759 points, Real-time Eye AF for humans, animals, birds',
+        connectivity: 'Wi-Fi (5GHz), Bluetooth, USB-C 3.2, 1000BASE-T Ethernet',
+    },
+    bestFor: ['Professional', 'Sports', 'Wildlife', 'Videography'],
+  },
+  {
+    id: '7',
+    name: 'Sony Alpha 7R V',
+    slug: 'sony-alpha-7r-v',
+    shortDescription: 'A new era of resolution and AI-based autofocus. Evolution in resolution.',
+    price: 3899,
+    specs: {
+        sensor: '61.0MP 35mm full-frame Exmor R CMOS sensor',
+        megapixels: '61.0MP',
+        iso: '100-32000 (expandable to 50-102400)',
+        video: '8K 24p, 4K 60p',
+        autofocus: '693 points with dedicated AI processing unit for subject recognition',
+        connectivity: 'Wi-Fi (5GHz), Bluetooth, USB-C 3.2',
+    },
+    bestFor: ['Landscape', 'Portrait', 'Professional'],
+  },
 ];
 
 export const placeholderImages: PlaceholderImage[] = [
@@ -144,6 +176,28 @@ export const placeholderImages: PlaceholderImage[] = [
       { id: '1', imageUrl: 'https://picsum.photos/seed/zve10-1/1200/800', imageHint: 'camera lifestyle' },
       { id: '2', imageUrl: 'https://picsum.photos/seed/zve10-2/1200/800', imageHint: 'camera screen' },
       { id: '3', imageUrl: 'https://picsum.photos/seed/zve10-3/1200/800', imageHint: 'camera vlogger' },
+    ],
+  },
+  {
+    id: 'sony-alpha-1',
+    description: 'The Sony Alpha 1 camera, showcasing its robust body and professional controls.',
+    imageUrl: 'https://picsum.photos/seed/a1-main/800/600',
+    imageHint: 'professional camera',
+    gallery: [
+      { id: '1', imageUrl: 'https://picsum.photos/seed/a1-1/1200/800', imageHint: 'camera detail' },
+      { id: '2', imageUrl: 'https://picsum.photos/seed/a1-2/1200/800', imageHint: 'camera sports' },
+      { id: '3', imageUrl: 'https://picsum.photos/seed/a1-3/1200/800', imageHint: 'camera wildlife' },
+    ],
+  },
+  {
+    id: 'sony-alpha-7r-v',
+    description: 'The high-resolution Sony Alpha 7R V camera, highlighting its detail-capturing capabilities.',
+    imageUrl: 'https://picsum.photos/seed/a7rv-main/800/600',
+    imageHint: 'high resolution camera',
+    gallery: [
+      { id: '1', imageUrl: 'https://picsum.photos/seed/a7rv-1/1200/800', imageHint: 'camera landscape' },
+      { id: '2', imageUrl: 'https://picsum.photos/seed/a7rv-2/1200/800', imageHint: 'camera portrait' },
+      { id: '3', imageUrl: 'https://picsum.photos/seed/a7rv-3/1200/800', imageHint: 'camera studio' },
     ],
   },
   {

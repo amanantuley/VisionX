@@ -24,7 +24,7 @@ export function generateStaticParams() {
   const cameras = getCameraBySlug(''); // In a real app, this would be `getCameras()`
   if (!cameras) return [];
   
-  return [{ slug: 'sony-alpha-a7-iv' }, { slug: 'sony-alpha-a6400' }, { slug: 'sony-alpha-a6700' }, { slug: 'sony-fx30' }, { slug: 'sony-zv-e10' }];
+  return [{ slug: 'sony-alpha-a7-iv' }, { slug: 'sony-alpha-a6400' }, { slug: 'sony-alpha-a6700' }, { slug: 'sony-fx30' }, { slug: 'sony-zv-e10' }, { slug: 'sony-alpha-1' }, { slug: 'sony-alpha-7r-v' }];
 }
 
 export default function ProductDetailPage({ params }: Props) {
