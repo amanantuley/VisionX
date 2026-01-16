@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
 const frameCount = 40;
-const getFramePath = (frame: number) => `/sequence/ezgif-frame-${String(frame).padStart(3, '0')}.png`;
+const getFramePath = (frame: number) => `/sequence/ezgif-frame-${String(frame).padStart(3, '0')}.jpg`;
 
 const HeroContent = ({ isVisible }: { isVisible: boolean }) => (
     <div className={cn(
