@@ -1,4 +1,35 @@
+import { Suspense } from 'react';
 import { ContactForm } from '@/components/contact-form';
+import { Card, CardContent } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
+
+function ContactFormSkeleton() {
+  return (
+    <Card>
+      <CardContent className="p-6">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <Skeleton className="h-4 w-1/4" />
+            <Skeleton className="h-10 w-full" />
+          </div>
+          <div className="space-y-2">
+            <Skeleton className="h-4 w-1/4" />
+            <Skeleton className="h-10 w-full" />
+          </div>
+          <div className="space-y-2">
+            <Skeleton className="h-4 w-1/4" />
+            <Skeleton className="h-10 w-full" />
+          </div>
+          <div className="space-y-2">
+            <Skeleton className="h-4 w-1/4" />
+            <Skeleton className="h-24 w-full" />
+          </div>
+          <Skeleton className="h-11 w-full" />
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
 export default function ContactPage() {
   return (
@@ -10,7 +41,9 @@ export default function ContactPage() {
             Have a question about a product or need assistance? Fill out the form below and we'll get back to you.
           </p>
         </div>
-        <ContactForm />
+        <Suspense fallback={<ContactFormSkeleton />}>
+          <ContactForm />
+        </Suspense>
       </div>
     </div>
   );
