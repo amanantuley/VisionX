@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
-const frameCount = 40;
+const frameCount = 240;
 const getFramePath = (frame: number) => `/sequence/ezgif-frame-${String(frame).padStart(3, '0')}.jpg`;
 
 const HeroContent = ({ isVisible }: { isVisible: boolean }) => (
@@ -37,7 +37,7 @@ export function HeroSequence() {
   const sequenceContainerRef = useRef<HTMLDivElement>(null);
   const [images, setImages] = useState<string[]>([]);
 
-  // Generate image paths and preload them
+  // Generate image paths and preload a portion of them
   useEffect(() => {
     const newImages = [];
     for (let i = 1; i <= frameCount; i++) {
@@ -46,7 +46,9 @@ export function HeroSequence() {
     }
     setImages(newImages);
 
-    newImages.forEach(src => {
+    // Preload the first few images to ensure a smooth start
+    const imagesToPreload = newImages.slice(0, 30);
+    imagesToPreload.forEach(src => {
         const img = new (window as any).Image();
         img.src = src;
     });
@@ -92,7 +94,7 @@ export function HeroSequence() {
           unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        <HeroContent isVisible={frame < 15} />
+        <HeroContent isVisible={frame < 90} />
       </div>
     </div>
   );
