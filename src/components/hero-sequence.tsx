@@ -47,7 +47,7 @@ export function HeroSequence() {
     setImages(newImages);
 
     // Preload the first few images to ensure a smooth start
-    const imagesToPreload = newImages.slice(0, 30);
+    const imagesToPreload = newImages.slice(0, 60);
     imagesToPreload.forEach(src => {
         const img = new (window as any).Image();
         img.src = src;
